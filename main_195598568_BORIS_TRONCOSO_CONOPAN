@@ -11,3 +11,28 @@
 (define (element-type? e)
   (and (symbol? e)
        (member e ELEMENT-TYPE)))
+
+;; ---------------------------------------------------------
+;; RF02: TDA Ataque - constructor
+;; ---------------------------------------------------------
+; Descripción: Función que permite crear un ataque con su costo, descripción y función de daño.
+; Dom: cost (List ELEMENT-TYPE) X nombre (string) X texto (string) X funcion (procedimiento)
+; Rec: attack
+; Tipo recursión: No aplica
+(define (attack cost nombre texto funcion-dano)
+  (list 'attack cost nombre texto funcion-dano))
+
+;; Selectores del TDA Ataque (Apoyo para el RF01)
+; Descripción: Retorna el costo en energías del ataque
+; Dom: a (attack)
+; Rec: cost (List ELEMENT-TYPE)
+; Tipo recursión: No aplica
+(define (attack-cost a) 
+  (cadr a))
+
+; Descripción: Retorna el nombre del ataque
+; Dom: a (attack)
+; Rec: nombre (string)
+; Tipo recursión: No aplica
+(define (attack-name a) 
+  (caddr a))
