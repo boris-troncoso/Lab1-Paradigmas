@@ -36,3 +36,28 @@
 ; Tipo recursión: No aplica
 (define (attack-name a) 
   (caddr a))
+
+
+;; ---------------------------------------------------------
+;; RF03: TDA Card - constructor
+;; ---------------------------------------------------------
+; Descripción: Función con parámetros n-variables que permite crear una carta (Pokémon, Energía o Entrenador).
+; Dom: tipoCarta (CARD-TYPE) X n-parametros (dependen del tipo)
+; Rec: card
+; Tipo recursión: No aplica
+(define (card tipo . atributos)
+  (if (card-type? tipo)
+      (cons tipo atributos)
+      '("Error: Tipo de carta no valido")))
+
+;; ---------------------------------------------------------
+;; RF04: TDA Deck - constructor
+;; ---------------------------------------------------------
+; Descripción: Crea una baraja de juego para un jugador, validando la cantidad.
+; Dom: cartas (n-variables de tipo card)
+; Rec: deck
+; Tipo recursión: No aplica
+(define (deck . cartas)
+  (if (= (length cartas) 60)
+      (cons 'deck cartas)
+      '("Error: El mazo debe tener exactamente 60 cartas")))
