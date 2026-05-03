@@ -61,3 +61,20 @@
   (if (= (length cartas) 60)
       (cons 'deck cartas)
       '("Error: El mazo debe tener exactamente 60 cartas")))
+
+;; ---------------------------------------------------------
+;; RF05: TDA Deck - barajar cartas (shuffleDeck)
+;; ---------------------------------------------------------
+; Descripción: Revuelve una baraja de juegos haciendo uso de una semilla para generar números aleatorios.
+; Dom: mazo (deck) X seed (int+)
+; Rec: deck
+; Tipo recursión: Pendiente de implementar
+
+;; Función obligatoria para generar números pseudoaleatorios
+(define (randomPuro Xn)
+  (modulo (+ (* Xn 1103515245) 12345) 2147483648))
+
+(define (shuffleDeck mazo seed)
+  ;; Estructura base para el commit de hoy.
+  ;; Retorna el mazo intacto por ahora para que no tire error al compilar.
+  mazo)
