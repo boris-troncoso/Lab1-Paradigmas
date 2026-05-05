@@ -78,3 +78,27 @@
   ;; Estructura base para el commit de hoy.
   ;; Retorna el mazo intacto por ahora para que no tire error al compilar.
   mazo)
+
+
+;; ---------------------------------------------------------
+;; RF01: TDA Estado de Juego (Game State) - constructor
+;; ---------------------------------------------------------
+; Descripción: Crea la estructura base del estado del juego para mantener la información de la partida.
+; Dom: mazo-j1 (deck) X mazo-j2 (deck)
+; Rec: Juego
+; Tipo recursión: No aplica
+(define (crear-estado-juego mazo-j1 mazo-j2)
+  ;; Por ahora solo guarda los mazos. Más adelante agregaremos las manos, premios y bancas.
+  (list 'estado-juego mazo-j1 mazo-j2))
+
+;; ---------------------------------------------------------
+;; RF06: Iniciar juego (initGame)
+;; ---------------------------------------------------------
+; Descripción: Realiza las acciones previas a iniciar un juego (barajar, robar 7 cartas, separar premios).
+; Dom: mazo1 (deck) X mazo2 (deck) X seed (int+)
+; Rec: Juego
+; Tipo recursión: Pendiente de implementar
+(define (initGame mazo1 mazo2 seed)
+  ;; Estructura base para el commit. 
+  ;; Retorna el estado básico del juego para no fallar la compilación.
+  (crear-estado-juego mazo1 mazo2))
