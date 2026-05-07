@@ -102,3 +102,19 @@
   ;; Estructura base para el commit. 
   ;; Retorna el estado básico del juego para no fallar la compilación.
   (crear-estado-juego mazo1 mazo2))
+
+
+;; ---------------------------------------------------------
+;; RF07: Representación del juego como string (printGame)
+;; ---------------------------------------------------------
+; Descripción: Retorna una representación como string del estado actual del juego sin usar display internamente.
+; Dom: juego (Juego) X numero_jugador (int)
+; Rec: string
+; Tipo recursión: Cola (Pendiente de implementar el detalle)
+(define (printGame juego numero_jugador)
+  ;; Estructura base para el commit de hoy.
+  ;; Retorna un string genérico simulando la estructura visual del tablero.
+  (string-append "Turno actual: Jugador " (number->string numero_jugador) "\n"
+                 "Mazo: 47 cartas disponibles\n"
+                 "Premios disponibles: 6\n"
+                 "--- Tablero en construccion ---\n"))
