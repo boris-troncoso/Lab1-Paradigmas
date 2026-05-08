@@ -118,3 +118,25 @@
                  "Mazo: 47 cartas disponibles\n"
                  "Premios disponibles: 6\n"
                  "--- Tablero en construccion ---\n"))
+
+;; ---------------------------------------------------------
+;; RF09: Cambiar pokémon activo (changeActivePokemon)
+;; ---------------------------------------------------------
+; Descripción: Pone un Pokémon de la banca al frente como Pokémon activo pagando coste de retirada si aplica.
+; Dom: juego (Juego) X cartaDeLaBanca (card)
+; Rec: Juego
+; Tipo recursión: Pendiente de implementar
+(define (changeActivePokemon juego cartaDeLaBanca)
+  ;; Estructura base para el commit de hoy.
+  juego)
+
+;; ---------------------------------------------------------
+;; RF10: Robar carta del mazo (drawCardFromDeck)
+;; ---------------------------------------------------------
+; Descripción: Saca la primera carta del mazo y la deja en la mano del jugador actual.
+; Dom: juego (Juego)
+; Rec: Juego
+; Tipo recursión: Pendiente de implementar
+(define (drawCardFromDeck juego)
+  ;; Estructura base para el commit de hoy.
+  juego)
