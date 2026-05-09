@@ -140,3 +140,20 @@
 (define (drawCardFromDeck juego)
   ;; Estructura base para el commit de hoy.
   juego)
+
+(define (deep-flatten lst)
+  (cond
+    ;; 1. Caso base: la lista está vacía.
+    [(null? lst) '()]
+    
+    ;; 2. El primer elemento NO es una lista (es un átomo).
+    ;; Lo conservamos (cons) y aplanamos el resto de la lista (cdr).
+    [(not (list? (car lst)))
+     (cons (car lst) (deep-flatten (cdr lst)))]
+    
+    ;; 3. El primer elemento SÍ es una lista.
+    ;; Aplanamos el primer elemento (car) y lo unimos (append) 
+    ;; con el aplanado del resto (cdr).
+    [else
+     (append (deep-flatten (car lst)) 
+             (deep-flatten (cdr lst)))]))
