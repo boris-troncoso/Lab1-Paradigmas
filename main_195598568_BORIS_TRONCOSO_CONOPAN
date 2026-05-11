@@ -151,3 +151,14 @@
 (define (useEnergyCard juego cartaPokemon cartaEnergia)
   ;; Estructura base para el commit de hoy.
   juego)
+
+;; ---------------------------------------------------------
+;; RF12: Evolucionar pokémon (evolvePokemon)
+;; ---------------------------------------------------------
+; Descripción: Función que evoluciona a un Pokemon en juego usando una carta evolutiva de la mano del jugador.
+; Dom: juego (Juego) X cartaPokemon (card) X cartaPokemonEvolucion (card) [cite: 368, 370, 371]
+; Rec: Juego [cite: 373]
+; Tipo recursión: Pendiente de implementar
+(define (evolvePokemon juego cartaPokemon cartaPokemonEvolucion)
+  ;; Estructura base para el commit de hoy.
+  juego)
