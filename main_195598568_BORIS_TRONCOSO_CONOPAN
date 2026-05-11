@@ -162,3 +162,16 @@
 (define (evolvePokemon juego cartaPokemon cartaPokemonEvolucion)
   ;; Estructura base para el commit de hoy.
   juego)
+
+
+;; ---------------------------------------------------------
+;; RF13: Usar carta de entrenador (useTrainerCard)
+;; ---------------------------------------------------------
+; Descripción: Función que hace uso de una carta de entrenador desde la mano, ejecuta sus acciones y la envía al descarte.
+; Dom: juego (Juego) X cartaEntrenador (card) X FuncionAdditionalArguments (List)
+; Rec: Juego
+; Tipo recursión: Pendiente de implementar
+(define (useTrainerCard juego cartaEntrenador FuncionAdditionalArguments)
+  ;; Estructura base para el commit de hoy.
+  ;; Por ahora retorna el juego sin cambios para permitir la compilación.
+  juego)
