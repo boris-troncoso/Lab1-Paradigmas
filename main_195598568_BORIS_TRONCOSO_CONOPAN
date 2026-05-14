@@ -175,3 +175,15 @@
   ;; Estructura base para el commit de hoy.
   ;; Por ahora retorna el juego sin cambios para permitir la compilación.
   juego)
+
+;; ---------------------------------------------------------
+;; RF14: Usar habilidad pokémon (usePokemonAbility)
+;; ---------------------------------------------------------
+; Descripción: Ejecuta las acciones asociadas a una habilidad de alguna carta Pokémon en juego[cite: 405].
+; Dom: juego (Juego) X cartaPokemon (card) X FuncionAdditionalArguments (List) [cite: 429, 430, 431, 433, 434]
+; Rec: Juego [cite: 436]
+; Tipo recursión: Pendiente de implementar
+(define (usePokemonAbility juego cartaPokemon FuncionAdditionalArguments)
+  ;; Estructura base para el commit de hoy.
+  ;; Retorna el juego sin modificaciones temporalmente.
+  juego)
