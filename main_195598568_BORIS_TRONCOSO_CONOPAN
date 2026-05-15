@@ -187,3 +187,15 @@
   ;; Estructura base para el commit de hoy.
   ;; Retorna el juego sin modificaciones temporalmente.
   juego)
+
+;; ---------------------------------------------------------
+;; RF15: Usar ataque pokémon (usePokemonAttack)
+;; ---------------------------------------------------------
+; Descripción: Ejecuta las acciones asociadas a un ataque del Pokémon activo del jugador actual.
+; Dom: juego (Juego) X cartaPokemon (card) X nombreAtaque (string) X FuncionAdditionalArguments (List)
+; Rec: Juego
+; Tipo recursión: Pendiente de implementar
+(define (usePokemonAttack juego cartaPokemon nombreAtaque FuncionAdditionalArguments)
+  ;; Estructura base para el commit de hoy.
+  ;; Retorna el juego intacto para permitir la compilación general.
+  juego)
