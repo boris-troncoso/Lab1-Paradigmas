@@ -1,0 +1,15 @@
+RF1 - TDAs - Especificación e implementación de abstracciones: 1
+RF2 - TDA Ataque - constructor (attack): 1
+RF3 - TDA Card - constructor (card): 1
+RF4 - TDA Deck - constructor (deck): 1
+RF5 - TDA Deck - barajar cartas (shuffleDeck): 1
+RF6 - Iniciar juego (initGame): 1
+RF7 - Representación del juego como string (printGame): 1
+RF8 - Poner pokémon en banca (playToBench): 1
+RF9 - Cambiar pokémon activo (changeActivePokemon): 1
+RF10 - Robar carta del mazo (drawCardFromDeck): 0.7
+RF11 - Usar carta de energía (useEnergyCard): 1
+RF12 - Evolucionar pokémon (evolvePokemon): 0.7
+RF13 - Usar carta de entrenador (useTrainerCard): 1
+RF14 - Usar habilidad pokémon (usePokemonAbility): 0.7
+RF15 - Usar ataque pokémon (usePokemonAttack): 1
